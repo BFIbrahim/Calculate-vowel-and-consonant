@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate the number of vowels and consonants</title>
+</head>
+
+<body style="text-align: center;">
+    <form id="vowelConsonantForm">
+        <label for="inputString" style="font-size: 22px; font-weight: bold; font-family: arial;">Enter Something:</label><br><br>
+        <input style="padding: 5px;" type="text" id="inputString" required><br><br>
+    
+        <button style="background-color: tomato; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;" type="button" onclick="calculate()">Calculate</button>
+      </form>
+      
+      <p style="font-size: 20px; font-family: arial; font-weight: bold;"><strong>vowels:</strong> <span style="color: tomato;" id="vowelCount"></span></p>
+      <p style="font-size: 20px; font-family: arial; font-weight: bold;"><strong>consonants:</strong> <span style="color: tomato;" id="consonantCount"></span></p>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
