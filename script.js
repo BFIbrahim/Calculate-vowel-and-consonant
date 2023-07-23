@@ -1,14 +1,13 @@
-function calculate() {
-    const inputString = document.getElementById('inputString').value;
-    const counts = countVowelsAndConsonants(inputString);
+function calculateNum() {
+    const inputText = document.getElementById('inputText').value;
+    const counts = countVowelsAndConsonants(inputText);
 
-    // Display the results in the respective elements
     document.getElementById('vowelCount').textContent = counts.vowels;
     document.getElementById('consonantCount').textContent = counts.consonants;
   }
 
-  function countVowelsAndConsonants(str) {
-    const lowerStr = str.toLowerCase();
+  function countVowelsAndConsonants(string) {
+    const lowerStr = string.toLowerCase();
     const vowels = ['a', 'e', 'i', 'o', 'u'];
     const consonants = 'bcdfghjklmnpqrstvwxyz'.split('');
     let vowelCount = 0;
